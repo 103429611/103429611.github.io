@@ -3,10 +3,6 @@
 
 <!-- TO-DO  -->
 
-<!-- ADD multiple section elements  -->
-<!-- ADD at least one aside  -->
-<!--   -->
-<!--   -->
 
 <!-- DONE  -->
 
@@ -21,6 +17,8 @@
 <!--  Use headings with at least two levels  -->
 <!--  Include one ordered list and one unordered list -->
 <!--  Include at least two job position descriptions using semantic HTML.  -->
+<!-- ADD at least one aside  -->
+<!-- ADD multiple section elements  -->
 
 
 <head> <!-- Head containing nesseccary info on Character set, Description, Keywords and Author -->
@@ -37,15 +35,15 @@
 
 <body>
     <header>
-        <img id="logo" src="images/logo.png" alt="InfraWatch Logo"> <!-- the alt is just added for acessibility-->
-        <h1>Jobs Page</h1>
-        <p class="hero-slogan">Powering Smarter Infrastructure.</p>
+        <img class="header"id="logo" src="images/logo.png" alt="InfraWatch Logo"> <!-- the alt is just added for acessibility-->
+        <h1 class="header" id="title">Jobs Page</h1>
+        <p class="header" id="subtitle">Powering Smarter Infrastructure.</p>
 
-        <nav> <!--Navigation-->
-            <a href="about.html">About</a>
-            <a href="apply.html">Apply</a>
-            <a href="index.html">Index</a>
-            <a href="jobs.html">Jobs</a>
+        <nav class="header" id="nav"> <!--Navigation-->
+            <a id="about" href="about.html">About</a>
+            <a id="apply" href="apply.html">Apply</a>
+            <a id="index" href="index.html">Index</a>
+            <a id="jobs" href="jobs.html">Jobs</a>
         </nav>
     <br>
     </header>
@@ -70,58 +68,58 @@
 
     <!--  Job descriptions of current open jobs -->
     <section id="job_descriptions">
-    <h3>Job Descriptions</h3>
-    <hr>
-    <section id="job1">
-    <h4>AI Implimentation Lead</h4> <!-- Job 1 listing -->
-    <p><strong>Job ref. </strong>12345</p> <!-- "Strong" tags to make text bold and accessable  -->
-    <p><strong>Salary: </strong>$180,000 Base</p>
-    <p><strong>Reporting to: </strong>Opperations Manager</p>
-    <p><strong>Description</strong>We are looking for a AI Implimentation Lead to work closely with a field depolyment team and alongside our existing tech development team to impliment a range of AI features into our quickly growing fleet of cameras and monitoring equipent that will be rolled out across a number of local, state and federal governments.</p>
-    
-    <ol> <!-- Unordered list nested within an ordered list of job requirments  -->
-        <li>Essential Requirements
-            <ul>
-                <li>A stong and up to date understanding of AI infrustructure</li>
-                <li>3 years of senior team leadership</li>
-                <li>A can do attitude that is able to work around a dynamic team enviroment</li>
-            </ul>
-        </li>
-            <li>prefered Requirements
-            <ul>
-                <li>A background in vibe coding and ai agent coordination</li>
-                <li>A vehicle and current license to travel to deployment locations</li>
-                <li>The ability to have a laugh with the team</li>
-            </ul>
-        </li>
-    </ol>
-    </section>
+        <h3>Job Descriptions</h3>
+        <hr>
+        <section id="job1">
+            <h4>AI Implimentation Lead</h4> <!-- Job 1 listing -->
+            <p><strong>Job ref. </strong>12345</p> <!-- "Strong" tags to make text bold and accessable  -->
+            <p><strong>Salary: </strong>$180,000 Base</p>
+            <p><strong>Reporting to: </strong>Opperations Manager</p>
+            <p><strong>Description: </strong>We are looking for a AI Implimentation Lead to work closely with a field depolyment team and alongside our existing tech development team to impliment a range of AI features into our quickly growing fleet of cameras and monitoring equipent that will be rolled out across a number of local, state and federal governments.</p>
+            
+            <ol> <!-- Unordered list nested within an ordered list of job requirments  -->
+                <li>Essential Requirements
+                    <ul>
+                        <li>A stong and up to date understanding of AI infrustructure</li>
+                        <li>3 years of senior team leadership</li>
+                        <li>A can do attitude that is able to work around a dynamic team enviroment</li>
+                    </ul>
+                </li>
+                    <li>Prefered Requirements
+                    <ul>
+                        <li>A background in vibe coding and ai agent coordination</li>
+                        <li>A vehicle and current license to travel to deployment locations</li>
+                        <li>The ability to have a laugh with the team</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
 
 
-    <section id="job2">
-    <h4>Public Liason Officer</h4> <!-- Job 2 listing -->
-    <p><strong>Job ref. </strong>67890</p>
-    <p><strong>Salary: </strong>$62,000</p>
-    <p><strong>Reporting to: </strong>Public Liason Lead</p>
-    <p><strong>Description</strong>As a Public Liason Officer, your main responsibilities will include: Scouting of potential future depoloyment locations, gauging of current public sentiment around AI and safety monitoring systems, reporting to the Public Liason Lead around methods and tactics to go forth with deployments in a friendly and compelling way taking into about business needs while balancing public feedback.</p>
-        
-    <ol> <!-- Unordered list nested within an ordered list of job requirments  -->
-        <li>Essential Requirements
-            <ul>
-                <li>A current and valid driving license</li>
-                <li>A working vehicle capable of carring light equipment such as cameras</li>
-                <li>3 years in a public facing role</li>
-            </ul>
-        </li>
-            <li>prefered Requirements
-            <ul>
-                <li>Customer service management</li>
-                <li>Office 365 and adobe suite</li>
-                <li>A taste for good jokes and coffee</li>
-            </ul>
-        </li>
-    </ol>
-    </section> <!--- job2 --->
-    </section> <!--- job_descriptions --->
+        <section id="job2">
+            <h4>Public Liason Officer</h4> <!-- Job 2 listing -->
+            <p><strong>Job ref. </strong>67890</p>
+            <p><strong>Salary: </strong>$62,000</p>
+            <p><strong>Reporting to: </strong>Public Liason Lead</p>
+            <p><strong>Description: </strong>As a Public Liason Officer, your main responsibilities will include: Scouting of potential future depoloyment locations, gauging of current public sentiment around AI and safety monitoring systems, reporting to the Public Liason Lead around methods and tactics to go forth with deployments in a friendly and compelling way taking into about business needs while balancing public feedback.</p>
+                
+            <ol> <!-- Unordered list nested within an ordered list of job requirments  -->
+                <li>Essential Requirements
+                    <ul>
+                        <li>A current and valid driving license</li>
+                        <li>A working vehicle capable of carring light equipment such as cameras</li>
+                        <li>3 years in a public facing role</li>
+                    </ul>
+                </li>
+                    <li>Prefered Requirements
+                    <ul>
+                        <li>Customer service management</li>
+                        <li>Office 365 and adobe suite</li>
+                        <li>A taste for good jokes and coffee</li>
+                    </ul>
+                </li>
+            </ol>
+        </section> <!--- job2 section end --->
+    </section> <!--- job_descriptions section end --->
 </body>
     
