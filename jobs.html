@@ -30,18 +30,24 @@
     <meta name="description" content="Job listings page">
     <meta name="keywords" content="HTML, Doctype, Head, Body, Meta, Paragraph, Headings">
     <meta name="author" content="Ashley Butler">
+
+    <link rel="stylesheet" href="/Styles/styles.css">
+
 </head>
 
 <body>
     <header>
-        <!--- will be where <nav> goes-->
+        <img id="logo" src="images/logo.png" alt="InfraWatch Logo"> <!-- the alt is just added for acessibility-->
         <h1>Jobs Page</h1>
-        <nav> <!--  Nav Tags that link to all the different pages -->
+        <p class="hero-slogan">Powering Smarter Infrastructure.</p>
+
+        <nav> <!--Navigation-->
             <a href="about.html">About</a>
             <a href="apply.html">Apply</a>
             <a href="index.html">Index</a>
             <a href="jobs.html">Jobs</a>
         </nav>
+    <br>
     </header>
      <!-- Ordered list towards top of page showing open jobs  -->
     <h2>Current Open Jobs</h2>
@@ -50,9 +56,23 @@
         <li>Public Liason Officer</li>
     </ol>
     
+    <aside>
+        <h3>Notes from our current team</h3>
+        <h5>Mark - Accounting</h5>
+        <p>I love working here at Infrawatch, the pay is great, the team are awesome and the management let you work at your pace</p>
+        <h5>Debra - Marketing</h5>
+        <p>With unlimited tea, coffee and biscuits who wouldn't want to work here</p>
+        <h5>Grace - CFO</h5>
+        <p>I've never worked somewhere with a CEO whos more down to earth and treats their staff with such respect</p>
+        <h5>Emma - squatter on 5th floor</h5>
+        <p>Don't tell them I'm hiding here!!</p>
+    </aside>
+
     <!--  Job descriptions of current open jobs -->
+    <section id="job_descriptions">
     <h3>Job Descriptions</h3>
     <hr>
+    <section id="job1">
     <h4>AI Implimentation Lead</h4> <!-- Job 1 listing -->
     <p><strong>Job ref. </strong>12345</p> <!-- "Strong" tags to make text bold and accessable  -->
     <p><strong>Salary: </strong>$180,000 Base</p>
@@ -75,7 +95,10 @@
             </ul>
         </li>
     </ol>
-    <hr>
+    </section>
+
+
+    <section id="job2">
     <h4>Public Liason Officer</h4> <!-- Job 2 listing -->
     <p><strong>Job ref. </strong>67890</p>
     <p><strong>Salary: </strong>$62,000</p>
@@ -98,5 +121,7 @@
             </ul>
         </li>
     </ol>
+    </section> <!--- job2 --->
+    </section> <!--- job_descriptions --->
 </body>
     
