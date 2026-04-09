@@ -20,7 +20,29 @@ header {
     margin:0.5em ;
     padding:0.5em ;
     background-color: #111920;
-    text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+/* Nav links for hover behaviour */
+#about:hover, #apply:hover, #index:hover, #jobs:hover {
+    color:#ca5521;
+}
+
+
+#logo {
+  order: 0;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
 }
 
 #logo{
@@ -51,8 +73,9 @@ aside {
     border: 4px solid purple;
     border-radius: 14px;
     margin:1em;
+    margin-left: 4em;
     padding: 1em;
-    width: 30%;
+    width: 25%;
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 
