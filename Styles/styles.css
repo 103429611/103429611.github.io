@@ -1,0 +1,188 @@
+/*
+
+filename:  styles.css
+
+author: Ashley Butler
+
+created: 08/04/2026
+
+last modified: 08/04/2026
+
+description: styles across all pages
+
+*/
+/* Added by Alex for universal CSS */
+/* Universal Font for all pages for cross-browser compatibility */
+/* Universal adjustable font size for all pages for responsive design */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
+h1{
+    font-size: 2vw
+}
+
+/* Added by Ashley for universal CSS */
+header {
+    border: 1px inset darkgrey;
+    border-radius: 14px;
+    margin:0.5em ;
+    padding:0.5em ;
+    background-color: #111920;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+/* Nav links for hover behaviour */
+#about:hover, #apply:hover, #index:hover, #jobs:hover {
+    color:#ca5521;
+}
+
+
+#logo {
+  order: 0;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+}
+
+#logo{
+    float: left;
+    max-height: 150px;
+    max-width: auto;
+    width: 120px;
+    height: auto;
+    margin:auto;    
+    padding: 1em;
+}
+
+body {
+    background-color: #0e1318;
+    color: white;
+    width: 80%;
+    float: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+/*--------------------------------------------------------*/
+ /* #region Ashley Section */
+
+aside {
+    float: right;
+    border: 4px solid purple;
+    border-radius: 14px;
+    margin:1em;
+    margin-left: 4em;
+    padding: 1em;
+    width: 25%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+#job_descriptions{
+    border: 1px blue;
+}
+#job_descriptions h3{
+    text-align: center;
+}
+
+#job1 {
+    border: 4px solid purple;
+    border-radius: 14px;
+    margin: 1em;
+    margin-bottom: 4em;
+    padding: 1em;
+    background-color: #0b3b51 ;
+    width: 60%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+#job1 h4 {color: #ca5521;}
+#job1 p {color: #f5a15e;}
+#job1 ol li {color: #ca5521;}
+#job1 ol li ul li {color: #f5a15e;}
+
+#job2 {
+    border: 4px solid purple;
+    border-radius: 14px;
+    margin: 1em;
+    margin-bottom: 4em;
+    padding: 1em;
+    background-color: #0b3b51 ;
+    width: 60%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+#job2 h4 {color: #ca5521;}
+#job2 p {color: #f5a15e;}
+#job2 ol li {color: #ca5521;}
+#job2 ol li ul li {color: #f5a15e;}
+/* #endregion Ashley Section */
+/*--------------------------------------------------------*/
+/* Added by Will for About page */
+/* #region Will Section */
+
+/* #endregion Will Section */
+/*--------------------------------------------------------*/
+/* Added by Alex for Apply page */
+/* #region Alex Section */
+
+
+
+
+fieldset{
+    
+    border-color: white;
+    border-radius: .5em;
+    border-width: 1em;
+    
+}
+
+
+
+
+
+#book{
+    font-size: 1.5em;
+    color: white;
+    background-color: darkgray;
+    border-radius: .5em;
+    border-width: .5em;
+}
+
+#genderfieldset{
+    border-width:.25em;
+}
+
+#applyform {
+    width: 38em;
+    display: flex;
+    flex-direction: column;
+    background-color:gray;
+    border-radius: 1em;
+    border-width: 3em;
+    border-color: white;
+
+
+}
+
+
+
+
+/* #endregion Alex Section */
+/*--------------------------------------------------------*/
+/* Added by Noor for Index page */
+/* #region Noor Section */
+
+/* #endregion Noor Section */
+/*--------------------------------------------------------*/
