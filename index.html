@@ -8,24 +8,46 @@
 <!-- Need to add at least one table using cell merging -->
 <!-- Need to add a search box with a button -->
 <!-- Need to add Acknowledgement of Country section -->
+<!-- AI USE ACKNOWLEDGEMENT: The InfraWatch logo (logo.png) was generated using Canva AI.
+     Prompt used: "a camera lens inside a circuit"
+     Source: https://www.canva.com -->
 
 <head>
     <meta charset="UTF-8"> <!-- Character set -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Make page more accessible by fitting into every screen without looking weird -->
     <meta name="description" content="InfraWatch - Smart City Infrastructure Monitoring"> <!-- Page description -->
     <meta name="keywords" content="smart city, infrastructure, AI cameras, government, monitoring"> <!-- Keywords will help in SEO -->
     <meta name="author" content="Noor Fatima Nisar"> <!-- Taking credit of my work hehe -->
     
     <title>InfraWatch - Home</title> 
     <link rel="stylesheet" href="Styles/styles.css"> 
+    
     <style>
-         /* CSS - i'll add later when the individual work is done */
+       .hero-section {
+          position: relative;
+          overflow: hidden;
+        }
+
+        .hero-section::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background-image: url("images/smartcity.jpg");
+          background-size: cover;
+          background-position: center;
+          opacity: 0.15;   /* lower = more transparent */
+          z-index: 0;
+        }
+
+        .hero-section > * {
+          position: relative;
+          z-index: 1;   /* keeps text above the background */
+        }
     </style>
 </head>
 
 <body>
  <header>
-    <img src="images/logo.png" alt="InfraWatch Logo"> <!-- the alt is just added for acessibility-->
+    <img src="images/logo.png" alt="InfraWatch Logo"> <!-- AI-generated logo image via Canva AI --> <!-- the alt is just added for acessibility-->
     <h1 style="color:#ffffff;">InfraWatch</h1>
     <p class="hero-slogan">Powering Smarter Infrastructure.</p>
  </header>
@@ -40,7 +62,7 @@
  </nav>
 
  <main>
-    <section>
+    <section class="hero-section">
         <h2>Who Are We?</h2>
         <p>InfraWatch is an organisation specialising in the development and deployment of smart AI camera systems for local and federal governments. Our technology monitors road and energy infrastructure in real time, providing governments with the data they need to reduce risks, guide future developments, and make smarter strategic planning decisions. With the hardware and expertise to support a state-wide rollout, we are ready to work with your government to keep communities running safer and more efficiently.</p>
         <img src="images/smartcity.jpg" alt="smart city infrastructure monitoring">
