@@ -11,7 +11,17 @@ last modified: 08/04/2026
 description: styles across all pages
 
 */
+/* Added by Alex for universal CSS */
+/* Universal Font for all pages for cross-browser compatibility */
+/* Universal adjustable font size for all pages for responsive design */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
 
+h1{
+    font-size: 2vw
+}
 
 /* Added by Ashley for universal CSS */
 header {
@@ -126,6 +136,47 @@ aside {
 /*--------------------------------------------------------*/
 /* Added by Alex for Apply page */
 /* #region Alex Section */
+
+
+
+
+fieldset{
+    
+    border-color: white;
+    border-radius: .5em;
+    border-width: 1em;
+    
+}
+
+
+
+
+
+#book{
+    font-size: 1.5em;
+    color: white;
+    background-color: darkgray;
+    border-radius: .5em;
+    border-width: .5em;
+}
+
+#genderfieldset{
+    border-width:.25em;
+}
+
+#applyform {
+    width: 38em;
+    display: flex;
+    flex-direction: column;
+    background-color:gray;
+    border-radius: 1em;
+    border-width: 3em;
+    border-color: white;
+
+
+}
+
+
 
 
 /* #endregion Alex Section */

@@ -6,6 +6,13 @@
     
     <link rel="stylesheet" href="/Styles/styles.css">
 
+    <style>
+        legend{
+            font-size: 1.5em;
+            text-align:center;
+        }
+    </style>
+
     </head>
 <body>
     <header>
@@ -22,33 +29,32 @@
     </header>
     <br>
 
-
-    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" id="applyform"> <!--Inline CSS-->
         <fieldset>
             <!--Reference number-->
         <legend>Enter Job Reference Number:</legend>
-            <input type="text" id="reference" name="reference" placeholder="Job Reference Number:" 
-            pattern="^[a-zA-Z1-9]{1,20}$" required><br>
+            <input type="text" id="reference" name="reference" placeholder="Job Reference Number" 
+            pattern="^[a-zA-Z1-9]{1,20}$" required><br> <!--Exactly 5 alphanumeric characters-->
         </fieldset>
 
         <fieldset>
             <!--Personal details-->
-        <legend>Please enter your personal details:<legend>
+        <legend>Personal details:</legend>
             <label for="firstname">First Name:</label><br>                          
-            <input type="text" id="firstname" name="firstname" placeholder="First Name:"
+            <input type="text" id="firstname" name="firstname" placeholder="First Name"
             pattern="^[a-zA-Z]{1,20}$" required><br> <!-- NEED TO ADD FILTERS FOR ACCENTED CHARACTERS, Max 20 alphanumerical characters -->
 
             <label for="lastname">Last Name:</label><br>
-            <input type="text" id="lastname" name="lastname" placeholder="Last Name:" 
+            <input type="text" id="lastname" name="lastname" placeholder="Last Name" 
             pattern="^[a-zA-Z]{1,20}$" required><br><!-- NEED TO ADD FILTERS FOR ACCENTED CHARACTERS, Max 20 alphanumerical characters -->
 
             <label for="dob">Date Of Birth:</label><br>
             <input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy"
             pattern="^(0?[1-9]|[12][0-9]|3[01])[\/](0?[1-9]|1[012])[\/]\d{4}$" required>
 
-            <fieldset>
+            <fieldset id="genderfieldset">
                 <!--Gender radio fieldset-->
-            <legend>Gender:</legend>
+            <legend id="genderlegend">Gender:</legend>
 
                 <input type="radio" name="gender" value="female" id="female" required>
                         <label for="female">Female</label><br>
@@ -70,7 +76,7 @@
         </fieldset>
 
         <fieldset>
-        <legend>Please Enter your contact details:</legend>
+        <legend>Contact details:</legend>
             <!--Contact details-->
             <label for="address">Street Address:</label><br>
             <input type="text" id="address" name="address" placeholder="Max 40 characters" 
@@ -109,20 +115,37 @@
         </fieldset>
 
         <fieldset>
-        <legend>Coding Skills:</legend>
+        <legend>Skills / Qualifications:</legend>
 
-            <input type="checkbox" name="skills" value="HTML" id="html">
-            <label for="html">HTML</label><br>
+            <input type="checkbox" name="skills" value="ai" id="ai">
+            <label for="ai">A stong and up to date understanding of AI infrustructure</label><br>
 
-            <input type="checkbox" name="skills" value="CSS" id="css">
-            <label for="css">CSS</label><br>
+            <input type="checkbox" name="skills" value="leadership" id="leadership">
+            <label for="leadership">3 Years of Senior Leadership</label><br>
 
-            <input type="checkbox" name="skills" value="JavaScript" id="javascript">
-            <label for="javascript">JavaScript</label><br>
+            <input type="checkbox" name="skills" value="attitude" id="attitude">
+            <label for="attitude">A can do attitude that is able to work around a dynamic team enviroment</label><br>
 
-            <input type="checkbox" name="skills" value="Python" id="python">
-            <label for="python">Python</label><br>
+            <input type="checkbox" name="skills" value="licence" id="licence">
+            <label for="licence">A current and valid driving license</label><br>
 
+            <input type="checkbox" name="skills" value="car" id="car">
+            <label for="car">A working vehicle capable of carring light equipment such as cameras</label><br>
+
+            <input type="checkbox" name="skills" value="public" id="public">
+            <label for="car">3 years in a public facing role</label><br>
+
+            <input type="checkbox" name="skills" value="customer" id="customer">
+            <label for="customer">Customer service management</label><br>
+
+            <input type="checkbox" name="skills" value="adobe" id="adobe">
+            <label for="adobe">Adobe suite experience</label><br>
+           
+            <input type="checkbox" name="skills" value="office" id="office">
+            <label for="office">Office 365 experience</label><br>
+
+            <input type="checkbox" name="skills" value="coffee" id="coffee">
+            <label for="coffee">A taste for good jokes and coffee</label><br>
 
 
 
@@ -139,8 +162,8 @@
 
 
 
-        <input type="submit" value="Book">
-        <input type="reset" value="Reset form">    
+        <input id="book" type="submit" value="Book">
+        <input id="book" type="reset" value="Reset form">    
 
 
     </form>
