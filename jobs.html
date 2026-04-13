@@ -2,7 +2,8 @@
 <html lang="en">
 
 <!-- TO-DO  -->
-
+<!-- Add inline CSS -->
+ <!-- Add Embeded CSS -->
 
 <!-- DONE  -->
 
@@ -30,6 +31,22 @@
     <meta name="author" content="Ashley Butler">
 
     <link rel="stylesheet" href="/Styles/styles.css">
+    <style>
+        #Current_job_openings li {
+            color:greenyellow;
+            font-family: sans-serif, Arial, "Helvetica Neue", Helvetica;
+            margin: 1em;
+        }
+        #Current_job_openings li:hover {
+            color:coral;
+        }
+        a:visited {
+            color: greenyellow;
+        }
+        a:hover {
+            color: coral;
+        }
+    </style>
 
 </head>
 
@@ -48,10 +65,12 @@
     <br>
     </header>
      <!-- Ordered list towards top of page showing open jobs  -->
-    <h2>Current Open Jobs</h2>
-    <ol>
-        <li>AI Implimentation Lead</li>
-        <li>Public Liason Officer</li>
+      <!-- INLINE CSS to change font-size to 2x and color of the text to plum-->
+    <h2 style="font-size: 2em; color: plum;">Current Open Jobs</h2>
+
+    <ol id="Current_job_openings">
+        <li><a href="#job1">AI Implimentation Lead</a></li>
+        <li><a href="#job2">Public Liason Officer</a></li>
     </ol>
     
     <aside>
