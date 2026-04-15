@@ -145,17 +145,13 @@ fieldset{
     border-color: white;
     border-radius: .5em;
     border-width: 1em;
-    
+ 
 }
-
-
-
-
 
 #book{
     font-size: 1.5em;
     color: white;
-    background-color: darkgray;
+    background-color: black;
     border-radius: .5em;
     border-width: .5em;
 }
@@ -168,12 +164,10 @@ fieldset{
     width: 38em;
     display: flex;
     flex-direction: column;
-    background-color:gray;
+    background-color:black;
     border-radius: 1em;
     border-width: 3em;
     border-color: white;
-
-
 }
 
 

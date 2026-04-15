@@ -3,23 +3,30 @@
     <head>
     <meta charset="UTF-8"> <!-- Character set -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Apply</title>
     <link rel="stylesheet" href="/Styles/styles.css">
 
     <style>
+        /* Internal Css */
         legend{
             font-size: 1.5em;
             text-align:center;
         }
+        a{
+            color: white;
+        }
+        
     </style>
 
     </head>
 <body>
     <header>
         <img class="header" id="logo" src="images/logo.png" alt="InfraWatch Logo"> <!-- the alt is just added for acessibility-->
+        <!-- Title -->
         <h1 class="header">Apply</h1>
         <p class="header" class="hero-slogan">Powering Smarter Infrastructure.</p>
-        <nav class="header" id="nav"> <!--Navigation-->
+         <!--Navigation-->
+        <nav class="header" id="nav">
             <a id="about" href="about.html">About</a>
             <a id="apply" href="apply.html">Apply</a>
             <a id="index" href="index.html">Index</a>
@@ -29,16 +36,16 @@
     </header>
     <br>
 
-    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" id="applyform"> <!--Inline CSS-->
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" id="applyform">
+        <!--Reference number fieldset-->
         <fieldset>
-            <!--Reference number-->
         <legend>Enter Job Reference Number:</legend>
+            <label for="reference">Reference number:</label><br>
             <input type="text" id="reference" name="reference" placeholder="Job Reference Number" 
             pattern="^[a-zA-Z1-9]{1,20}$" required><br> <!--Exactly 5 alphanumeric characters-->
         </fieldset>
-
+        <!--Personal details fieldset-->
         <fieldset>
-            <!--Personal details-->
         <legend>Personal details:</legend>
             <label for="firstname">First Name:</label><br>                          
             <input type="text" id="firstname" name="firstname" placeholder="First Name"
@@ -51,10 +58,10 @@
             <label for="dob">Date Of Birth:</label><br>
             <input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy"
             pattern="^(0?[1-9]|[12][0-9]|3[01])[\/](0?[1-9]|1[012])[\/]\d{4}$" required>
-
+            <!--Gender fieldset-->
             <fieldset id="genderfieldset">
                 <!--Gender radio fieldset-->
-            <legend id="genderlegend">Gender:</legend>
+            <legend>Gender:</legend>
 
                 <input type="radio" name="gender" value="female" id="female" required>
                         <label for="female">Female</label><br>
@@ -74,7 +81,7 @@
                 <input type="text" name="custom-gender" id="custom" placeholder="Please specify:">
             </fieldset>
         </fieldset>
-
+        <!--Contact details fieldset-->
         <fieldset>
         <legend>Contact details:</legend>
             <!--Contact details-->
@@ -92,7 +99,7 @@
             <!--Perhaps add functionality for people applying from other countries-->
             <label for="state">State:</label>
             <br>
-            <select name="state" id="state">
+            <select name="state" id="state" required>
                 <option value="VIC">Victoria</option>
                 <option value="NSW">New South Wales</option>
                 <option value="QLD">Queensland</option>
@@ -113,42 +120,40 @@
             pattern="^[0-9]{8,12}$" required><br>  
 
         </fieldset>
-
+        <!--Skills/qualifications fieldset-->
         <fieldset>
-        <legend>Skills / Qualifications:</legend>
 
-            <input type="checkbox" name="skills" value="ai" id="ai">
+        <legend>Skills / Qualifications:</legend>
+                
+            <input type="checkbox" name="skills[]" value="ai" id="ai">
             <label for="ai">A stong and up to date understanding of AI infrustructure</label><br>
 
-            <input type="checkbox" name="skills" value="leadership" id="leadership">
+            <input type="checkbox" name="skills[]" value="leadership" id="leadership">
             <label for="leadership">3 Years of Senior Leadership</label><br>
 
-            <input type="checkbox" name="skills" value="attitude" id="attitude">
+            <input type="checkbox" name="skills[]" value="attitude" id="attitude">
             <label for="attitude">A can do attitude that is able to work around a dynamic team enviroment</label><br>
 
-            <input type="checkbox" name="skills" value="licence" id="licence">
+            <input type="checkbox" name="skills[]" value="licence" id="licence">
             <label for="licence">A current and valid driving license</label><br>
 
-            <input type="checkbox" name="skills" value="car" id="car">
+            <input type="checkbox" name="skills[]" value="car" id="car">
             <label for="car">A working vehicle capable of carring light equipment such as cameras</label><br>
 
-            <input type="checkbox" name="skills" value="public" id="public">
-            <label for="car">3 years in a public facing role</label><br>
+            <input type="checkbox" name="skills[]" value="public" id="public">
+            <label for="public">3 years in a public facing role</label><br>
 
-            <input type="checkbox" name="skills" value="customer" id="customer">
+            <input type="checkbox" name="skills[]" value="customer" id="customer">
             <label for="customer">Customer service management</label><br>
 
-            <input type="checkbox" name="skills" value="adobe" id="adobe">
+            <input type="checkbox" name="skills[]" value="adobe" id="adobe">
             <label for="adobe">Adobe suite experience</label><br>
            
-            <input type="checkbox" name="skills" value="office" id="office">
+            <input type="checkbox" name="skills[]" value="office" id="office">
             <label for="office">Office 365 experience</label><br>
 
-            <input type="checkbox" name="skills" value="coffee" id="coffee">
+            <input type="checkbox" name="skills[]" value="coffee" id="coffee">
             <label for="coffee">A taste for good jokes and coffee</label><br>
-
-
-
 
             <label for="other-skills">Other Skills:</label>
             <br>
@@ -161,9 +166,9 @@
     </fieldset>
 
 
-
-        <input id="book" type="submit" value="Book">
-        <input id="book" type="reset" value="Reset form">    
+        <!--Book and reset form, inline css below-->
+        <input id="book" type="submit" value="Book" style="background-color: black;">
+        <input id="book" type="reset" value="Reset form" style="background-color: black;" >    
 
 
     </form>
