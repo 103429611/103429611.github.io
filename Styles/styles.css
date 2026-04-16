@@ -57,9 +57,9 @@ header {
 
 #logo{
     float: left;
-    max-height: 150px;
+    max-height: 8vw;
     max-width: auto;
-    width: 120px;
+    width: 8vw;
     height: auto;
     margin:auto;    
     padding: 1em;
