@@ -2,8 +2,7 @@
 <html lang="en">
 
 <!-- TO-DO  -->
-<!-- Add inline CSS -->
- <!-- Add Embeded CSS -->
+
 
 <!-- DONE  -->
 
@@ -20,6 +19,10 @@
 <!--  Include at least two job position descriptions using semantic HTML.  -->
 <!-- ADD at least one aside  -->
 <!-- ADD multiple section elements  -->
+<!-- Add inline CSS -->
+<!-- Add Embeded CSS -->
+
+<!--  -->
 
 
 <head> <!-- Head containing nesseccary info on Character set, Description, Keywords and Author -->
@@ -30,7 +33,9 @@
     <meta name="keywords" content="HTML, Doctype, Head, Body, Meta, Paragraph, Headings">
     <meta name="author" content="Ashley Butler">
 
+    <!-- CSS linking file -->
     <link rel="stylesheet" href="/Styles/styles.css">
+    <!-- embeded CSS -->
     <style>
         #Current_job_openings li {
             color:greenyellow;
@@ -40,7 +45,7 @@
         #Current_job_openings li:hover {
             color:coral;
         }
-        a:visited {
+        a:visited, a {
             color: greenyellow;
         }
         a:hover {
@@ -52,7 +57,7 @@
 
 <body>
     <header>
-        <img class="header"id="logo" src="images/logo.png" alt="InfraWatch Logo"> <!-- the alt is just added for acessibility-->
+        <img class="header" id="logo" src="images/logo.png" alt="InfraWatch Logo"> <!-- the alt is just added for acessibility-->
         <h1 class="header" id="title">Jobs Page</h1>
         <p class="header" id="subtitle">Powering Smarter Infrastructure.</p>
 
@@ -64,24 +69,24 @@
         </nav>
     <br>
     </header>
-     <!-- Ordered list towards top of page showing open jobs  -->
-      <!-- INLINE CSS to change font-size to 2x and color of the text to plum-->
+    
+    <!-- INLINE CSS to change font-size to 2x and color of the text to plum-->
     <h2 style="font-size: 2em; color: plum;">Current Open Jobs</h2>
-
+    <!-- Ordered list towards top of page showing open jobs  -->
     <ol id="Current_job_openings">
         <li><a href="#job1">AI Implimentation Lead</a></li>
         <li><a href="#job2">Public Liason Officer</a></li>
     </ol>
-    
+    <!-- aside, main adjacent content, in this case showing employee reviews  -->
     <aside>
         <h3>Notes from our current team</h3>
-        <h5>Mark - Accounting</h5>
+        <h4>Mark - Accounting</h4>
         <p>I love working here at Infrawatch, the pay is great, the team are awesome and the management let you work at your pace</p>
-        <h5>Debra - Marketing</h5>
+        <h4>Debra - Marketing</h4>
         <p>With unlimited tea, coffee and biscuits who wouldn't want to work here</p>
-        <h5>Grace - CFO</h5>
+        <h4>Grace - CFO</h4>
         <p>I've never worked somewhere with a CEO whos more down to earth and treats their staff with such respect</p>
-        <h5>Emma - squatter on 5th floor</h5>
+        <h4>Emma - squatter on 5th floor</h4>
         <p>Don't tell them I'm hiding here!!</p>
     </aside>
 
@@ -89,6 +94,7 @@
     <section id="job_descriptions">
         <h3>Job Descriptions</h3>
         <hr>
+        <!-- Section with unique ID for job to aid CSS formatting  -->
         <section id="job1">
             <h4>AI Implimentation Lead</h4> <!-- Job 1 listing -->
             <p><strong>Job ref. </strong>12345</p> <!-- "Strong" tags to make text bold and accessable  -->
@@ -114,15 +120,16 @@
             </ol>
         </section>
 
-
+        <!-- Section with unique ID for job to aid CSS formatting  -->
         <section id="job2">
             <h4>Public Liason Officer</h4> <!-- Job 2 listing -->
             <p><strong>Job ref. </strong>67890</p>
             <p><strong>Salary: </strong>$62,000</p>
             <p><strong>Reporting to: </strong>Public Liason Lead</p>
             <p><strong>Description: </strong>As a Public Liason Officer, your main responsibilities will include: Scouting of potential future depoloyment locations, gauging of current public sentiment around AI and safety monitoring systems, reporting to the Public Liason Lead around methods and tactics to go forth with deployments in a friendly and compelling way taking into about business needs while balancing public feedback.</p>
-                
-            <ol> <!-- Unordered list nested within an ordered list of job requirments  -->
+            
+            <!-- Unordered list nested within an ordered list of job requirments  -->
+            <ol> 
                 <li>Essential Requirements
                     <ul>
                         <li>A current and valid driving license</li>
@@ -138,7 +145,7 @@
                     </ul>
                 </li>
             </ol>
-        </section> <!--- job2 section end --->
-    </section> <!--- job_descriptions section end --->
+        </section> <!-- job2 section end -->
+    </section> <!-- job_descriptions section end -->
 </body>
     
