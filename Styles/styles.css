@@ -55,6 +55,7 @@ a:hover {
 
 /* header class for text and content */
 .header {
+  min-height: 35px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -169,10 +170,12 @@ fieldset{
 /* Added by Noor for Index page */
 /* #region Noor Section */
 
+/* adds breathing room between each content section */
 main section {
     margin-bottom: 2em;
 }
 
+/* hides elements visually but keeps them readable by screen readers */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -182,12 +185,14 @@ main section {
     white-space: nowrap;
 }
 
-base { 
+/* removes default spacing from all elements for consistency */
+* { 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* layout container for the main intro area of the page, background graphic is in the embedded CSS in HTML. */
 .hero-section {
     position: relative;
     overflow: hidden;
@@ -197,6 +202,7 @@ base {
     margin: 1em 0;
 }
 
+/* image centered, half-width, with a subtle glassy border */
 .hero-section img {
     width: 50%;
     margin: 0 auto 1em;
@@ -204,6 +210,7 @@ base {
     border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
+/* decorative horizontal divider line inside the hero section */
 .hero-section hr {
     border: none;
     border-top: 1px solid rgba(255, 255, 255, 0.25);
@@ -211,6 +218,7 @@ base {
     margin: 1em auto 0;
 }
 
+/* lays statistics out in an evenly spaced row */
 .stats-bar {
     display: flex;
     flex-direction: row;
@@ -222,6 +230,7 @@ base {
     padding: 1em 0;
 }
 
+/* each stat stacks its number above its label vertically */
 .stat-item {
     display: flex;
     flex-direction: column;
@@ -230,10 +239,12 @@ base {
     padding: 0.5em 1.5em;
 }
 
+/* removes the right border from the last stat to avoid a double border */
 .stat-item:last-child {
     border-right: none;
 }
 
+/* large bold number styled in brand green to draw the eye */
 .stat-number {
     font-size: 1.8vw;
     font-weight: bold;
@@ -241,6 +252,7 @@ base {
     display: block;
 }
 
+/* smaller muted label sitting beneath each stat number */
 .stat-label {
     font-size: 0.9vw;
     color: #9ab8d0;
@@ -248,12 +260,14 @@ base {
     white-space: nowrap;
 }
 
+/* full-width table with borders collapsed into a clean grid */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1em;
 }
 
+/* small muted caption above the table describing its contents */
 caption {
     font-size: 0.9vw;
     color: #9ab8d0;
@@ -261,6 +275,7 @@ caption {
     text-align: left;
 }
 
+/* header cells use dark background and green text for brand consistency */
 th {
     background-color: #111920;
     color: greenyellow;
@@ -269,29 +284,34 @@ th {
     border: 1px solid darkgrey;
 }
 
+/* spanning group headers are centred and white to stand out */
 th[colspan] {
     text-align: center;
     color: white;
     letter-spacing: 0.05em;
 }
 
+/* data cells with consistent padding, borders, and top-aligned content */
 td {
     padding: 0.75em 1em;
     border: 1px solid darkgrey;
     vertical-align: top;
 }
 
+/* highlights the hovered row so users can track across columns easily */
 tr:hover td {
     background-color: #1e2d3d;
     transition: background-color 0.2s;
 }
 
+/* places the input and button side by side with a small gap */
 .search-container {
     display: flex;
     gap: 0.5em;
     max-width: 500px;
 }
 
+/* button styled dark with a green border to match the site theme */
 .search-container button {
     padding: 0.5em 1.2em;
     background-color: #111920;
@@ -303,11 +323,13 @@ tr:hover td {
     transition: background-color 0.25s, color 0.25s;
 }
 
+/* inverts button colours on hover for clear visual feedback */
 .search-container button:hover {
     background-color: greenyellow;
     color: #111920;
 }
 
+/* warm background with a coral left border to signal importance */
 .aoc-box {
     background-color: #1a1508;
     border-left: 4px solid coral;
@@ -317,6 +339,7 @@ tr:hover td {
     line-height: 1.8;
 }
 
+/* centred footer separated from main content by a top border */
 footer {
     text-align: center;
     padding: 1.5em;
@@ -325,12 +348,14 @@ footer {
     color: #9ab8d0;
 }
 
+/* inner divider line within the footer for visual separation */
 footer hr {
     border: none;
     border-top: 1px solid darkgrey;
     margin-bottom: 1em;
 }
 
+/* fine print text rendered in a more muted, smaller style */
 footer p {
     margin-top: 0.5em;
     font-size: 0.85vw;
@@ -338,25 +363,30 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    /* hero image expands to near full width on small screens */
     .hero-section img {
         width: 90%;
     }
 
+    /* stats wrap into a two-column grid instead of a single row */
     .stats-bar {
         flex-wrap: wrap;
     }
 
+    /* each stat takes roughly half the width when the bar wraps */
     .stats-bar div {
         flex: 1 1 45%;
         border-right: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
+    /* search bar stacks vertically and fills the full screen width */
      .search-container {
         flex-direction: column;
         max-width: 100%;
     }
 
+    /* scale text sizes down proportionally for narrow viewports */
     .stat-number { font-size: 4vw; }
     .stat-label  { font-size: 2.5vw; }
     caption      { font-size: 2.5vw; }
