@@ -140,9 +140,10 @@ fieldset{
  
 }
 
-#book{
+.book{
     font-size: 1.5em;
     color: white;
+    border-color: white;
     background-color: black;
     border-radius: .5em;
     border-width: .5em;
