@@ -34,6 +34,7 @@ header {
     margin:0.5em ;
     padding:0.5em ;
     background-color: #111920;
+
 }
 
 /*text of current job openeings on job page changed to green*/
@@ -58,13 +59,15 @@ a:hover {
 
 /* header class for text and content */
 .header {
-  min-height: 2vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
+    min-height: 2vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 /* Nav links for hover behaviour */
@@ -211,12 +214,13 @@ main section {
 
 /* removes default spacing from all elements for consistency */
 /* commented out by Ashley due to this box of text removing margings and padding on all text site wide and effecting layouts created by other students*/
+/*
 * { 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
+*/
 
 /* layout container for the main intro area of the page, background graphic is in the embedded CSS in HTML. */
 .hero-section {
