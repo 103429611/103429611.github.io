@@ -138,11 +138,10 @@ fieldset{
     text-align: left;
     padding: .25em;
 }
-#genderfieldset{
-    border-width:.1em;
-}
+
 #applydiv{
-    display: block;
+    display: flex;
+    flex-direction: column  ;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -150,9 +149,8 @@ fieldset{
     background-color: #111920;
     padding: .25em;
     border-radius: 1em;
-    width: 40em;
+    width: 42em;
      h2{
-        display: inline-block;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -160,17 +158,7 @@ fieldset{
         padding: .25em;
     }
 }
-#applyform {
-    width: 100%;
-    padding: .25em;
-    display: inline-block;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-
-}
 .book{
-    display: inline-block;
     width: 100%;
     font-size: 1.5em;
     color: white;
@@ -178,6 +166,27 @@ fieldset{
     background-color: #111920;
     border-radius: .5em;
 }
+input{
+    font-size: 1em;
+}
+
+.alphanumerical20{
+    width: 20em;
+}
+
+#dob{ 
+    width: 5em;
+}
+.char40{
+    width: 30em
+}
+#postcode{
+    width: 3em;
+}
+#email{
+    width: 20em;
+}
+
 /* #endregion Alex Section */
 /*--------------------------------------------------------*/
 /* Added by Noor for Index page */

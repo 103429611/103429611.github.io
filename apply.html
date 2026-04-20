@@ -35,9 +35,9 @@
     </header>
 
     <div id="applydiv">
-    <h2>Apply for a position at InfraWatch:</h2>
+    <h2>Apply for a position at InfraWatch</h2>
 
-    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" id="applyform">
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
         <!--Reference number fieldset-->
         <fieldset>
         <legend>&nbsp;Reference Number:&nbsp;</legend>
@@ -50,11 +50,11 @@
         <fieldset>
         <legend>&nbsp;Personal details:&nbsp;</legend>
             <label for="firstname">First Name:</label><br>                          
-            <input type="text" id="firstname" name="firstname" placeholder="First Name"
+            <input class="alphanumerical20" type="text" id="firstname" name="firstname" placeholder="First Name"
             pattern="^[a-zA-ZÀ-ÖØ-öø-ÿ]+{1,20}$" required><br> 
             <!--Max 20 alphanumerical characters, including accented characters -->
             <label for="lastname">Last Name:</label><br>
-            <input type="text" id="lastname" name="lastname" placeholder="Last Name" 
+            <input class="alphanumerical20" type="text" id="lastname" name="lastname" placeholder="Last Name" 
             pattern="^[a-zA-Z]{1,20}$" required><br>
             <!--Max 20 alphanumerical characters, including accented characters -->
             <label for="dob">Date Of Birth:</label><br>
@@ -62,7 +62,7 @@
             pattern="^(0?[1-9]|[12][0-9]|3[01])[\/](0?[1-9]|1[012])[\/]\d{4}$" required>
             <!--dd/mm/yyyy regex format-->
             <!--Gender fieldset-->
-            <fieldset id="genderfieldset">
+            <fieldset>
                 <!--Gender radio fieldset-->
             <legend>&nbsp;Gender:&nbsp;</legend>
 
@@ -89,12 +89,12 @@
         <legend>&nbsp;Contact details:&nbsp;</legend>
             <!--Contact details-->
             <label for="address">Street Address:</label><br>
-            <input type="text" id="address" name="address" placeholder="Max 40 characters" 
+            <input class="char40" type="text" id="address" name="address" placeholder="Max 40 characters" 
             pattern="^{1,40}$" required><br>
             <!--Max 40 characters-->  
 
             <label for="suburb">Suburb/Town:</label><br>
-            <input type="text" id="suburb" name="suburb" placeholder="Max 40 characters" 
+            <input class="char40" type="text" id="suburb" name="suburb" placeholder="Max 40 characters" 
             pattern="^{1,40}$" required><br>  
             <!--Max 40 characters-->
 
@@ -168,7 +168,7 @@
             <br>
             <textarea name="other-skills" id="other-skills" cols="50" rows="5"
             placeholder="Enter other applicable skills here"
-            style="resize:vertical;"></textarea>
+            style="resize:vertical; width: 100%;"></textarea>
             <!--^ inline CSS-->
             <br>
 
