@@ -128,22 +128,22 @@ aside {
 /* #region Alex Section */
 
 
-
 fieldset{
     
     border-color: white;
     border-radius: .5em;
-    border-width: 1em;
+    border-width: .5em;
     text-align: left;
+    padding: .25em;
 }
 
 .book{
     font-size: 1.5em;
     color: white;
     border-color: white;
-    background-color: black;
+    background-color: #111920;
     border-radius: .5em;
-    border-width: .5em;
+    border-width: .25em;
 }
 
 #genderfieldset{
@@ -154,11 +154,10 @@ fieldset{
     width: 38em;
     display: flex;
     flex-direction: column;
-    background-color:black;
-    border-radius: 1em;
-    border-width: 3em;
-    border-color: white;
+    background-color:#111920;
+    padding: .25em;
 }
+
 
 
 
