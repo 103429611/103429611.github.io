@@ -136,7 +136,8 @@ fieldset{
     text-align: left;
     padding: .25em;
 }
-/* nested CSS, aligns all content to center with a flexbox */
+/* nested CSS, aligns all content to center with a flexbox 
+W3C validator doesnt like nested css but it is supported by all major modern browsers*/
 #applydiv{
     display: flex;
     flex-direction: column  ;
@@ -148,7 +149,7 @@ fieldset{
     padding: .25em;
     border-radius: 1em;
     width: 42em;
-     h2{
+    h2{
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -156,6 +157,8 @@ fieldset{
         padding: .25em;
     }
 }
+
+
 /* Book class */
 .book{
     width: 100%;
