@@ -139,8 +139,7 @@ fieldset{
     text-align: left;
     padding: .25em;
 }
-/* nested CSS, aligns all content to center with a flexbox 
-W3C validator doesnt like nested css but it is supported by all major modern browsers*/
+/*aligns all content to center with a flexbox */
 #applydiv{
     display: flex;
     flex-direction: column  ;
@@ -152,13 +151,13 @@ W3C validator doesnt like nested css but it is supported by all major modern bro
     padding: .25em;
     border-radius: 1em;
     width: 42em;
-    h2{
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        font-size: 2em;
-        padding: .25em;
-    }
+}
+#applydiv h2 { 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2em;
+    padding: .25em;
 }
 
 
