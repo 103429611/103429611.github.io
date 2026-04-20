@@ -15,6 +15,7 @@ description: styles across all pages
 /* Universal Font for all pages for cross-browser compatibility */
 /* Universal adjustable font size for all pages for responsive design */
 
+/*changed defaults for text across the whole page*/
 *{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1vw;
@@ -35,21 +36,22 @@ header {
     background-color: #111920;
 }
 
-
+/*text of current job openeings on job page changed to green*/
 #Current_job_openings li {
     color:greenyellow;
     font-family: sans-serif, Arial, Helvetica;
     margin: 1em;
 }
-
+/*when hovering over a job title change to coral color*/
 #Current_job_openings li:hover {
     color:coral;
 }
-    
+
+/*visited and unvisited links will remail greenyellow regardless of visited state*/
 a:visited, a:link {
     color: greenyellow;
 }
-        
+/*when hovering over any link, make it coral*/    
 a:hover {
     color: coral;
 }
@@ -86,7 +88,7 @@ a:hover {
     padding: 0em;
 }
 
-/*  */
+/* background color of site, color of text, give a margin of 10% left and right of page content*/
 body {
     background-color: #0e1318;
     color: white;
@@ -111,9 +113,7 @@ aside {
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 
-#job_descriptions{
-    border: 1px blue;
-}
+/*Aligns text for Job Descriptions to the center*/
 #job_descriptions h3{
     text-align: center;
 }
@@ -199,11 +199,13 @@ main section {
 }
 
 /* removes default spacing from all elements for consistency */
+/* commented out by Ashley due to this box of text removing margings and padding on all text site wide and effecting layouts created by other students 
 * { 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+*/
 
 /* layout container for the main intro area of the page, background graphic is in the embedded CSS in HTML. */
 .hero-section {
