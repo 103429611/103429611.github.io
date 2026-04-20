@@ -20,6 +20,7 @@ description: styles across all pages
     font-size: 1vw;
 }
 
+
 /* edits all H1 headings (Main heading) */
 h1{
     font-size: 2vw
@@ -75,14 +76,14 @@ a:hover {
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
-    align-self: auto;
-
+    align-self: center;
+    border-radius: .5em;
     float: left;
     max-height: 10vw;
-    width: 8vw;
+    width: 6.5vw;
     height: auto;
     margin:auto;    
-    padding: 1em;
+    padding: 0em;
 }
 
 /*  */
@@ -93,6 +94,7 @@ body {
     margin-left: 10%;
     margin-right: 10%;
 }
+
 
 
 /*--------------------------------------------------------*/
