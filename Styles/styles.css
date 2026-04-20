@@ -132,32 +132,58 @@ aside {
 
 fieldset{
     
-    border-color: white;
+    border: white .25em solid;
     border-radius: .5em;
-    border-width: .5em;
+
     text-align: left;
     padding: .25em;
 }
 
-.book{
-    font-size: 1.5em;
-    color: white;
-    border-color: white;
-    background-color: #111920;
-    border-radius: .5em;
-    border-width: .25em;
-}
+
 
 #genderfieldset{
     border-width:.25em;
 }
 
+#applydiv{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: white .25em solid;
+    border-color: white;
+    background-color: #111920;
+    padding: 1em;
+    border-radius: 1em;
+    width: 40em;
+     h2{
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 2em;
+        padding: .25em;
+    }
+}
 #applyform {
-    width: 38em;
-    display: flex;
-    flex-direction: column;
-    background-color:#111920;
+    width: 100%;
     padding: .25em;
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.book{
+    display: inline-block;
+    width: 100%;
+    font-size: 1.5em;
+    color: white;
+    border: white .25em solid;
+    background-color: #111920;
+    border-radius: .5em;
+    border-width: .25em;
 }
 
 

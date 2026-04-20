@@ -32,9 +32,11 @@
             <a id="index" href="index.html">Index</a>
             <a id="jobs" href="jobs.html">Jobs</a>
         </nav>
-
     </header>
-    <br>
+
+    <div id="applydiv">
+    <h2>Apply for a position at InfraWatch:</h2>
+
     <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" id="applyform">
         <!--Reference number fieldset-->
         <fieldset>
@@ -161,7 +163,7 @@
 
             <input type="checkbox" name="skills[]" value="coffee & jokes" id="coffee">
             <label for="coffee">A taste for good jokes and coffee</label><br>
-
+            <br>
             <label for="other-skills">Other Skills:</label>
             <br>
             <textarea name="other-skills" id="other-skills" cols="50" rows="5"
@@ -176,10 +178,11 @@
 
 
         <!--Book and reset form-->
-        <input class="book" type="submit" value="Book">
+        <input class="book" type="submit" value="Submit form">
         <input class="book" type="reset" value="Reset form">    
 
 
     </form>
+</div>
 </body>
 </html>
