@@ -57,6 +57,17 @@ InfraWatch is a static recruitment website built for a simulated Smart City Infr
 
 ---
 
+# Project Structure/
+├── index.html        # Home page (Noor)
+├── jobs.html         # Job listings page (Ashley)
+├── apply.html        # Application form page (Alex)
+├── about.html        # About the company page (William)
+├── README.md         # ReadMe file
+├── styles.css        # Shared external stylesheet
+└── images/           # All image assets
+
+---
+
 # CSS architecture
 All shared styles live in `styles.css`. Every page additionally includes:
 - At least one **embedded** `<style>` block for page-specific rules
