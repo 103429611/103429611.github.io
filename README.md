@@ -19,8 +19,8 @@ InfraWatch is a static recruitment website built for a simulated Smart City Infr
 ---
 
 # Live site
-- **Jira Link:** `https://student-team-y0h6dox9.atlassian.net/jira/software/projects/SCRUM/boards/1?jql=assignee%20IN%20%28empty%2C%20712020%3Aea708ca8-c2e4-4f0b-8b3a-59c70d71625c%29`
-- **GitHub repository:** `https://github.com/103429611/103429611.github.io`
+- **Jira Link:** [Click here to access our Jira Board](https://student-team-y0h6dox9.atlassian.net/jira/software/projects/SCRUM/boards/1?jql=assignee%20IN%20%28empty%2C%20712020%3Aea708ca8-c2e4-4f0b-8b3a-59c70d71625c%29)
+- **GitHub repository:** [Click here to access Github](https://github.com/103429611/103429611.github.io)
 
 > Both links are also included in the footer of `index.html`.
 
@@ -39,10 +39,10 @@ InfraWatch is a static recruitment website built for a simulated Smart City Infr
 
 | Name | Student ID | Professional Title | Primary Responsibility |
 | :--- | :--- | :--- | :--- |
-| **Ashley** | [103429611] | Founder & Creative Director | Brand Strategy & `jobs.html` |
-| **Noor** | [106216609] | Visual Identity Lead | Logo Architecture & `index.html` |
-| **Alex** | [106340883] | Organizational Strategist | Workforce Design & `apply.html` |
-| **William**| [105913190] | Content Lead | Media Documentation & `about.html` |
+| **Ashley** | 103429611 | Founder & Creative Director | Brand Strategy & `jobs.html` |
+| **Noor** | 106216609 | Visual Identity Lead | Logo Architecture & `index.html` |
+| **Alex** | 106340883 | Organizational Strategist | Workforce Design & `apply.html` |
+| **William**| 105913190 | Content Lead | Media Documentation & `about.html` |
 
 > **Note:** Each member was responsible for the full HTML structure, content, and CSS styling of their assigned page.
 
@@ -113,6 +113,6 @@ All four pages have been validated using the [W3C Markup Validation Service] and
 
 # Academic integrity
 This project was developed for COS10026 at Swinburne University of Technology. Any use of generative AI tools or third-party resources have been acknowledged in accordance with unit policy. 
-* **Generative AI:** Canva AI was used to generate an initial logo concept. This concept was then manually redesigned and adapted for use in the final site. All other written content, HTML, and CSS was authored by the project team, and Gemini was used to understand how to write a ReadMe file to achieve the highest grade. 
+* **Generative AI:** Canva AI was used to generate an initial logo concept. This concept was then manually redesigned and adapted for use in the final site. All other written content, HTML, and CSS was authored by the project team, and Gemini was used to understand how to write a ReadMe file to achieve the highest grade and for tips. 
 
 
